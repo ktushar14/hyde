@@ -52,9 +52,7 @@ html {
 */
 @media (min-width: 58em) {
   .homepage-content {
-    font-size: 20px;
-    width: 58em;
-    line-height: 1.4em;
+    font-size: 18px;
     font-family: 'Quattrocento Sans', sans-serif;
   }
 }
@@ -136,8 +134,8 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    4rem;
-  padding-bottom: 4rem;
+  padding-top:    1rem;
+  padding-bottom: 1rem;
 }
 
 @media (min-width: 48em) {
@@ -150,7 +148,7 @@ a.sidebar-nav-item:focus {
 
 @media (min-width: 64em) {
   .content {
-    margin-left: 22rem;
+    margin-left: 20rem;
     margin-right: 4rem;
   }
 }
