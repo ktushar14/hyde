@@ -13,7 +13,15 @@
  * https://github.com/poole/hyde.
  */
 
+/*Quattrocento*/
+/*font-family: 'Quattrocento Sans', sans-serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Quattrocento+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+/* Garamond */
+/*font-family: 'Cormorant Garamond', serif;*/
+/*font-family: 'EB Garamond', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,700&display=swap');
+
 
 /*
  * Contents
@@ -33,8 +41,7 @@
  */
 
 html {
-  /*font-family: "PT Sans", Helvetica, Arial, sans-serif;*/
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'EB Garamond', serif;
 }
 @media (min-width: 48em) {
   html {
@@ -43,18 +50,7 @@ html {
 }
 @media (min-width: 58em) {
   html {
-    /*font-size: 20px;*/
-    font-size: 18px;
-  }
-}
-
-/*
-* Homepage content custom css
-*/
-@media (min-width: 58em) {
-  .homepage-content {
-    font-size: 18px;
-    font-family: 'Quattrocento Sans', sans-serif;
+    font-size: 20px;
   }
 }
 
@@ -91,8 +87,7 @@ html {
 .sidebar-about h1 {
   color: #fff;
   margin-top: 0;
-  /*font-family: "Abril Fatface", serif;*/
-  font-family: 'Quattrocento Sans', sans-serif;
+  font-family: 'EB Garamond', serif;
   font-size: 3.25rem;
 }
 
