@@ -22,11 +22,16 @@
 /*font-family: 'EB Garamond', serif;*/
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,700;1,400;1,700&family=EB+Garamond:ital,wght@0,400;0,600;1,400;1,700&display=swap');
 
+/*Libre Baskerville*/
+/*font-family: 'Libre Baskerville', serif;*/
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
 
 /*
  * Contents
  *
  * Global resets
+ * Homepage
  * Sidebar
  * Container
  * Reverse layout
@@ -41,18 +46,50 @@
  */
 
 html {
-  font-family: 'EB Garamond', serif;
+/*  font-family: 'EB Garamond', serif;*/
+  font-family: 'Quattrocento Sans', sans-serif;
+  line-height: 150%;
 }
-@media (min-width: 48em) {
+/*@media (min-width: 48em) {
   html {
     font-size: 16px;
   }
-}
+}*/
 @media (min-width: 58em) {
   html {
     font-size: 20px;
   }
 }
+
+/*
+ * Homepage
+ */
+
+/* tell the container's children to float left: */
+.float-my-children > * {
+    float:left;
+    margin-right:10px;
+}
+
+/* this is called a clearfix. it makes sure that the container's children floats
+ * are cleared, without using extra markup */
+
+.clearfix {
+    *zoom:1 /* for IE */
+}
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* end clearfix*/
+
 
 /*
  * Sidebar
@@ -63,7 +100,7 @@ html {
 
 .sidebar {
   text-align: center;
-  padding: 2rem 1rem;
+  padding: 1rem 1rem;
   color: rgba(255,255,255,.5);
   background-color: #202020;
 }
@@ -88,7 +125,7 @@ html {
   color: #fff;
   margin-top: 0;
   font-family: 'EB Garamond', serif;
-  font-size: 3.25rem;
+  font-size: 32px;
 }
 
 /* Sidebar nav */
@@ -130,8 +167,8 @@ a.sidebar-nav-item:focus {
  */
 
 .content {
-  padding-top:    1rem;
-  padding-bottom: 1rem;
+  padding-top:    3rem;
+  padding-bottom: 3rem;
 }
 
 @media (min-width: 48em) {
